@@ -1,0 +1,24 @@
+{
+    "configurations": [
+    {
+        "name": "UI",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}/UI/index.html"
+    },
+    {
+        "name": "API",
+        "request": "launch",
+        "type": "debugpy",
+        "program": "${workspaceFolder}/API/institute.py",
+    },
+    ],
+     "compounds": [ 
+       {
+          "name": "FULL STACK",
+          "configurations": ["UI","API"]
+          
+       },
+    ],
+}
