@@ -44,10 +44,10 @@ body {
   <a  class="active" href="register.html">register</a>
   <a href="course.html">Course</a>
 </div>
-<form style="display: block;border: 2px solid white;width: 50%;padding: 100;margin: 200; background-color: black;color: white  ; ">
+<form id="register-form" style="display: block;border: 2px solid white;width: 50%;padding: 100;margin: 200; background-color: black;color: white  ; ">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">name</label>
-      <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="enter your name">
+      <input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="enter your name">
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">e-mail</label>
@@ -61,14 +61,14 @@ body {
         <input type="text" class="form-control" id="qualification" placeholder="enter your qualification">
       </div><div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">phone number</label>
-        <input type="text" class="form-control" id="phonenumber " placeholder="enter your phone number">
+        <input type="text" class="form-control" id="phoneNumber " placeholder="enter your phone number">
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">address</label>
         <textarea class="form-control" id="address" rows="3" placeholder="enter your address"></textarea> 
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button onclick="CreateUserAccount()" type="submit" class="btn btn-primary">Submit</button>
   </form>
 </body>
 </html>
