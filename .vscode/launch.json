@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "firefox",
             "request": "launch",
+            "reAttach": true,
             "name": "UI",
-            "url": "http://localhost",
-            "webRoot": "${workspaceFolder}/UI/index.html"
+            "file": "${workspaceFolder}/UI/index.html"
         },
         {
             "type":"debugpy",
