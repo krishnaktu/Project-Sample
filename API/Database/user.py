@@ -8,14 +8,15 @@ class studentUserAccount(Base):
     name = Column(String)
     email = Column(String)
     password = Column(String) 
-    phoneNumber = Column(Integer)
+    phoneNumber = Column(String)
     address = Column(String)
     qualification = Column(String)
     course = Column(String)
-    courseMode = Column(String)
-    fee=Column(Integer)
+    amount=Column(String)
+    courseMode=Column(String)
 
-    def __init__(self, name, email, password, phoneNumber, address,qualification,course,courseMode):
+
+    def __init__(self, name, email, password, phoneNumber, address,qualification,course,amount,courseMode):
         self.name = name
         self.email = email
         self.password = password
@@ -23,6 +24,7 @@ class studentUserAccount(Base):
         self.address = address
         self.qualification=qualification
         self.course = course
-        self.courseMode= courseMode
-        self.fee =0
+        self.amount=amount
+        self.courseMode=courseMode
+
 
